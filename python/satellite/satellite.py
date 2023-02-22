@@ -52,7 +52,7 @@ class Satellite:
         if (sat_index % 1 != 0):
             raise TypeError("sat_index must be an integer")
         if (sat_index < 1):
-            raise TypeError("sat_index must be greater than zero")
+            raise ValueError("sat_index must be greater than zero")
         
         
         sat_index -= 1
